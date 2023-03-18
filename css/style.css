@@ -1,0 +1,1202 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lepcha&family=Raleway:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --main-police-color:black
+}
+
+/* Polices */
+
+
+#lodging p,
+#popular p,
+.flex_lodging p,
+.flex_popular p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-police-color);
+}
+
+header h2,
+#header_organization ul {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#lodging h3,
+#popular h3,
+.card_activity h3,
+.flex_lodging h3,
+.flex_popular h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--main-police-color);
+}
+
+.filters {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer h3,
+::placeholder,
+.filters p,
+.see_more {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--main-police-color);
+}
+
+header h1,
+.flex_popular h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Caractéristiques page et icônes */
+
+
+body {
+    font-family: Raleway, Verdana;
+    width: 1440px;
+    min-height: 100vh;
+    margin: auto
+}
+
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Organisation pour le Header */
+
+
+#header_organization {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 48px 0 0 55px;
+}
+
+#header_organization img {
+
+    width: 61.09px;
+    height: 19px;
+}
+
+#header_organization ul {
+    display: flex;
+    list-style: none;
+}
+
+#header_organization a:nth-of-type(1) {
+    margin-right: 67px;
+    color: var(--main-police-color);
+}
+
+#header_organization a:nth-of-type(2) {
+    margin-right: 77px;
+    color: var(--main-police-color);
+}
+
+
+#header_organization li:nth-of-type(1):hover:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 113px;
+    top: 0px;
+    background-color: #0065FC;
+}
+
+
+#header_organization li:nth-of-type(2):hover:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 63px;
+    top: 0px;
+    background-color: #0065FC;
+}
+
+
+header h1 {
+    margin: 59px 0 0 55px;
+}
+
+
+header h2 {
+    margin: 8px 0 0 55px
+}
+
+form {
+    display: flex;
+    margin-top: 20px;
+}
+
+label[for="city"] {
+    display: none;
+}
+
+form button:nth-of-type(2) {
+    display: none;
+}
+
+form::before {
+    font: var(--fa-font-solid);
+    content: "\f3c5";
+    background: #F2F2F2;
+    width: 50px;
+    height: 49px;
+    margin-left: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+}
+
+form input {
+
+    width: 236px;
+    height: 49px;
+    background: #FFFFFF;
+    border: 1px solid #F2F2F2;
+    padding-left: 17px;
+}
+
+form input:hover {
+    border: 2px solid var(--main-police-color);
+}
+
+form button {
+    width: 132px;
+    height: 49px;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    color: #FFFFFF;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    margin-top: 46px;
+}
+
+.filters ul {
+    display: flex;
+    list-style: none;
+}
+
+.filters {
+    display: flex;
+    list-style: none;
+    margin: 46px 0 0 62px;
+}
+
+.filter_group_1 {
+    display: flex;
+}
+
+.filter_group_2 {
+    display: flex;
+}
+
+.filters li:nth-of-type(1) {
+    margin: -14.58px 0 0 30px;
+    padding: 14.58px 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filters li:nth-of-type(1)::before {
+    font: var(--fa-font-solid);
+    content: "\f53a";
+    margin-right: 10px;
+    color: #0065FC;
+}
+
+.filters li:nth-of-type(1):hover {
+
+    background: #DEEBFF;
+}
+
+
+.filters li:nth-of-type(2) {
+    margin: -14.58px 0 0 45px;
+    padding: 14.58px 20px ;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filters li:nth-of-type(2)::before {
+    font: var(--fa-font-solid);
+    content: "\f183";
+    margin-right: 14.56px;
+    color: #0065FC;
+}
+
+.filters li:nth-of-type(2):hover {
+
+    background: #DEEBFF;
+}
+
+.filter_group_2 li:nth-of-type(1)::before {
+
+    font: var(--fa-font-solid);
+    content: "\f004";
+    ;
+}
+
+.filter_group_2 li:nth-of-type(2)::before {
+
+    font: var(--fa-font-solid);
+    content: "\f6d3";
+    ;
+}
+
+.number_lodging::before {
+    font: var(--fa-font-solid);
+    content: "\f129";
+    color: #0065FC;
+    margin-right: 11px;
+    margin-left: -5px;
+    border: 2px #D9D9D9 solid;
+    border-radius: 25px;
+    padding: 5px 10px
+
+}
+
+
+.number_lodging {
+    margin: 38px 0 39px 69px;
+}
+
+
+#lodging h3,
+#popular h3,
+.card_activity h3 {
+    width: 169px;
+    color: var(--main-police-color);
+
+}
+
+/* Carte Hébargement classique à Marseille  */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 246px;
+    height: 199px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 25px;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    width: 236px;
+    height: 124px;
+    border: 5px solid #FFFFFF;
+    object-fit: cover;
+
+}
+
+.card h3 {
+
+    margin: -4px 0 5px 0;
+}
+
+.ads {
+    padding: 2px 16px;
+}
+
+.star {
+    color: #0065FC
+}
+
+
+/* Carte Etablissements Populaire */
+
+.card_aside {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 343px;
+    height: 144px;
+    border-radius: 20px;
+    background: #FFFFFF;
+
+}
+
+.card_aside:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_aside img {
+    border-radius: 20px 0 0 20px;
+    width: 137px;
+    height: 135px;
+    border: 5px solid #FFFFFF;
+    object-fit: cover;
+
+}
+
+.card_aside h3 {
+    margin: 6px 0 7px 0;
+}
+
+.star2,
+.star2_lower {
+    color: #0065FC;
+
+}
+
+.star i:nth-of-type(5),.star2 i:nth-of-type(5),.star2_lower i:nth-of-type(5) {
+    color: #F2F2F2;
+}
+
+.popular {
+    padding: 2px 16px;
+}
+
+.horizontal_position {
+   display: flex;
+}
+
+
+/* Organisation des différents blocks */
+/* Organisation des cartes hébergements classiques */
+
+
+.global_organization {
+    display: flex
+}
+
+.lodging_organization h2 {
+
+    margin: 42px 40px 23px;
+
+}
+
+.flex_lodging {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 40px;
+}
+
+.lodging_organization {
+    width: 880px;
+    margin-left: 50px;
+    border-radius: 15px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+}
+
+.see_more {
+    width: 107px;
+    margin: 10px 0 40px 44px;
+    color: var(--main-police-color);
+}
+
+/* Organisation des cartes hébergements populaires*/
+
+.flex_popular {
+
+    width: 420px;
+    margin-left: 40px;
+    border-radius: 15px;
+    background: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.flex_popular h2 {
+    max-width: 420px;
+    margin-top: 41px;
+
+}
+
+.flex_popular h2::after {
+    font: var(--fa-font-solid);
+    margin-left: 118px;
+    content: "\f201";
+    color: #0065FC;
+}
+
+.flex_popular_media {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex_popular .star2 {
+    margin-top: 44px;
+}
+
+.flex_popular .star2_lower {
+    margin-top: 63px;
+}
+
+/* Carte Activités */
+
+.card_activity {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 302px;
+    height: 444.51px;
+    border-radius: 20px;
+
+}
+
+.card_activity img {
+    border-radius: 20px 20px 0 0;
+    width: 302px;
+    height: 389px;
+    object-fit: cover;
+}
+
+.card_activity h3 {
+    width: 302px;
+    margin: 20px 0 0 19px;
+}
+
+.card_activity:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Organisation des cartes activités */
+
+.flex_activity {
+    display: flex;
+    justify-content: space-evenly
+}
+
+.activity_organization h2 {
+    margin: 4.2% 0 1% 3.5% ;
+}
+
+
+/* Organisation pour le Footers */
+
+footer {
+    width: 1339px;
+    margin: auto;
+    margin-top: 60.51px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a,
+footer ul {
+    color: var(--main-police-color);
+    list-style: none;
+}
+
+footer nav {
+    margin: 45px 0
+}
+
+footer nav:nth-of-type(1) {
+    padding-left: 70px;
+}
+
+footer nav:nth-of-type(2) {
+    padding-right: 20px;
+}
+
+footer nav:nth-of-type(3) {
+    padding-right: 327px;
+}
+
+footer ul:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+footer li:nth-of-type(1){
+    margin-bottom: 12px;
+}
+
+footer li:nth-of-type(2){
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Caractéristiques page pour le breakpoint à 1024px */
+
+@media screen and (max-width:1024px) {
+    body {
+        width: 1024px;
+
+    }
+
+    /* Organisation du Header */
+
+    #header_organization{
+        margin: 48px 0 0 72px
+    }
+
+    header h1{
+        margin: 59px 0 0 72px;
+    }
+    
+    header h2{
+        margin: 8px 0 0 72px;
+    }
+
+    form::before{
+        margin-left: 72px;
+    }
+
+    .filters{
+        margin: 46px 0 0 72px;
+    }
+
+    .filters li:nth-of-type(1){
+        margin: -14.58px 0 0 25px;
+    }
+
+    .filters li:nth-of-type(2){
+        margin: -14.58px 0 0 25px;
+    }
+
+    /* Phrase sur le nombre d'hébergements */
+
+    .number_lodging::before {
+        margin: 0;
+        margin-right: 11px;
+    
+    }
+    
+    /* Organisation des différents blocks */
+    /* Organisation des cartes hébergements classiques */
+
+
+    .global_organization {
+        display: block;
+    }
+
+    .lodging_organization {
+        margin: auto;
+    }
+
+    /* Réorganisation contenus cartes hébergements populaires */
+
+    .card_aside {
+        width: 252px;
+        height: 154px;
+    }
+
+    .card_aside img {
+        width: 96px;
+        height: 144px;
+    }
+
+    .popular {
+        padding: 0px;
+        padding-left: 10px;
+    }
+
+    .popular h3 {
+        font-size: 14px;
+        font-weight: 700;
+        width: 104px;
+    }
+
+    .popular p {
+        font-size: 13px;
+
+    }
+
+    .flex_popular .star2,
+    .flex_popular .star2_lower {
+        margin-top: 64px
+    }
+
+    .flex_popular .star2_lower_tablet {
+        margin-top: -15px;
+    }
+
+    /* Organisation des cartes hébergements populaires*/
+
+    .flex_popular {
+        margin: auto;
+        margin-top: 53px;
+        width: 883px;
+    }
+
+    .flex_popular_media {
+        width: 883px;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 48px;
+
+    }
+
+    .flex_popular h2 {
+        margin: 34px 0 26px 0;
+        max-width: 883px;
+        width: 883px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex_popular h2::after {
+        font: var(--fa-font-solid);
+        margin-left: 550px;
+        content: "\f201";
+        color: #0065FC;
+    }
+
+    /* Réorganisation contenus cartes activités  */
+
+    .card_activity {
+        width: 182px;
+        height: 267px;
+    }
+
+    .card_activity img {
+        width: 182px;
+        height: 211px;
+    }
+
+    .card_activity h3 {
+        width: 140px;
+        margin-top: 5px;
+    }
+
+    /* Organisation des cartes activités */
+
+    .activity_organization {
+        margin-top: 70px;
+    }
+
+    .activity_organization h2 {
+        margin: 0;
+        margin-left: 81px;
+    }
+
+    .flex_activity {
+        margin: auto;
+        justify-content: space-evenly;
+        margin: 0 20px;
+        margin-top: 34px;
+    }
+
+    /* Organisation pour le Footers */
+
+    footer {
+        width: 879.65px;
+
+    }
+
+    footer nav:nth-of-type(1),
+    footer nav:nth-of-type(2),
+    footer nav:nth-of-type(3) {
+        margin: 0;
+        padding: 0;
+        margin-top: 85px;
+
+    }
+
+    footer nav:nth-of-type(1) {
+        margin-left: 70.21px;
+    }
+
+    footer nav:nth-of-type(3) {
+        margin-right: 173.18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Caractéristiques page pour le breakpoint à 768px*/
+
+@media screen and (max-width:768px) {
+    body {
+        width: 375px;
+        margin: auto;
+    }
+
+
+    /* Organisation du header */
+
+
+    #header_organization {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #header_organization img {
+        margin: 21px 0 48.56px 0;
+    }
+
+    #header_organization a:nth-of-type(1){
+        margin-right: 10px;
+    }
+
+    #header_organization li:nth-of-type(1) {
+        margin: 0;
+    }
+
+    #header_organization li:nth-of-type(2){
+        margin: 0;
+    }
+
+    #header_organization a:nth-of-type(1):hover{
+        color: #0065FC;
+    }
+
+    #header_organization nav {
+        width: 375px;
+    }
+
+    #header_organization ul {
+        justify-content: space-around;
+        padding-right: 30px;
+    }
+
+    #header_organization li:nth-of-type(1):before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 170px;
+        margin-top: 125px;
+        margin-left: -30px;
+        top: 0px;
+        background-color: #F2F2F2;
+    }
+
+    #header_organization li:nth-of-type(1):hover:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 170px;
+        margin-top: 125px;
+        top: 0px;
+        background-color: #0065FC;
+
+    }
+
+    #header_organization li:nth-of-type(2):before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 195px;
+        margin-top: 125px;
+        margin-left: -57px;
+        top: 0px;
+        background-color: #F2F2F2;
+       
+    }
+
+    #header_organization li:nth-of-type(2):hover:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 195px;
+        margin-top: 125px;
+        margin-left: -57px;
+        top: 0px;
+        background-color: blue;
+       
+    }
+
+    header h1 {
+        margin: 0;
+        width: 298px;
+        margin: 57.09px 0 0 20px;
+    }
+
+    header h2 {
+        margin: 0;
+        margin: 13px 0 0 20px;
+    }
+
+    form button:nth-of-type(1) {
+        display: none;
+    }
+
+    form button:nth-of-type(2){
+        display: inline;
+    }
+
+    form button {
+        width: 49px;
+        height: 49px;
+        background: #0065FC;
+        border: 1px solid #0065FC;
+        color: #FFFFFF;
+        border-radius: 0px 15px 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    form::before {
+        margin: 0;
+        margin-left: 22px;
+    }
+
+
+    /* Oragnisation des filtres */
+
+    .filters {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .filters li:nth-of-type(1) {
+        margin: 0;
+        padding: 0;
+        padding: 19px 10px 18px 13px;
+        margin-right: 14px;
+        border-radius: 50px;
+       
+    }
+
+    .filters li:nth-of-type(2) {
+        margin: 0;
+        padding: 0;
+        padding: 19px 10px 18px 13px;
+        border-radius: 50px;
+        
+    }
+
+    .filter_group_2 li:nth-of-type(1)::before {
+
+        font: var(--fa-font-solid);
+        content: "\f004";
+        padding-right: 5px;
+        
+    }
+
+    .filter_group_2 li:nth-of-type(2)::before {
+
+        font: var(--fa-font-solid);
+        content: "\f6d3";  
+    }
+
+    .filters ul {
+        font-size: 14px;
+        font-weight: 700;
+        margin: auto;
+        display: flex;
+
+    }
+
+    .filters ul:nth-of-type(2) {
+       margin-top: 17px;
+
+    }
+
+
+
+
+    .filters li:nth-of-type(1)::before {
+        margin: 0;
+        font-size: 20px;
+        padding-right: 10px; 
+    }
+
+    .filters li:nth-of-type(2)::before {
+        margin: 0;
+        font-size: 19px; 
+    }
+
+    .filter_group_1 {
+        margin-bottom: 17px;
+    }
+
+    .filter_group_1 li {
+        width: 145px;
+
+    }
+
+    .filter_group_2 li {
+        width: 145px;
+
+    }
+
+    .filters p {
+        margin: 34px 0 15px 20px;
+    }
+
+    /* Organisation de la phrase sur le nombres de logement disponible */
+
+    .number_lodging::before {
+        margin: 0;
+        width: 4px;
+        height: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 6px 10px;
+        margin-right: 11px;
+        margin-left: 20px;
+    }
+
+    .number_lodging {
+        margin: 0;
+        margin: 43px 0 0 0;
+        display: flex;
+    }
+
+
+    /* Réorganisation des cartes des établisements populaires */
+
+    .card_aside {
+        margin: auto;
+        width: 334px;
+        height: 154px;
+    }
+
+    .card_aside img {
+        width: 137px;
+        height: 144px;
+    }
+
+    /* Organisation des différents blocks */
+    /* Organisation des cartes hébergements populaires */
+
+
+    .global_organization {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .global_organization .lodging_organization {
+        order: 2;
+    }
+
+    .flex_popular {
+        background: #F2F2F2;
+        width: 375px;
+        margin: 0;
+        margin-top: 17px;
+        border-radius: 0;
+    }
+
+    .flex_popular h2 {
+        margin: 0;
+        margin-top: 28px;
+        max-width: 375px;
+        width: 375px;
+    }
+
+    .flex_popular h2::after {
+        margin: 0;
+        margin-left: 55px;
+    }
+
+    .flex_popular_media {
+        display: block;
+        width: 375px;
+    }
+
+    .flex_popular_media .card_aside:nth-of-type(1) {
+        margin-top: 26px;
+    }
+
+    .flex_popular_media .card_aside:nth-of-type(2) {
+
+        margin-top: 11px;
+        margin-bottom: 11px;
+
+    }
+
+
+    /* Réorganisation des cartes hébergements classiques */
+
+    .card {
+        width: 345px;
+        height: 199px;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+
+    .card img {
+        width: 335px;
+        height: 124px;
+    }
+
+    /* Organisation des cartes hébergements classiques */
+
+    .lodging_organization {
+        width: 375px;
+        background: #FFFFFF;
+    }
+
+    .lodging_organization h2 {
+        margin: 0;
+        margin: 26px 0 19px 20px;
+    }
+
+    .flex_lodging {
+        display: block;
+        padding: 0;
+        margin: auto;
+    }
+
+    /* Dissimulation du lien "Afficher plus" */
+
+    .see_more {
+        display: none;
+    }
+
+    /* Réorganisation des cartes activités*/
+
+    .card_activity {
+        width: 334px;
+        height: 190px;
+        margin: auto;
+        margin-bottom: 24px;
+
+    }
+
+    .card_activity img {
+        width: 334px;
+        height: 134px;
+    }
+
+    /* Organisation des cartes activités*/
+
+    .flex_activity {
+        display: block;
+        margin: 0;
+    }
+
+    .activity_organization {
+        margin: 0;
+    }
+
+    .activity_organization h2 {
+        margin: 0;
+        margin: 90px 0 0 22px ;
+        width: 212px;
+    }
+
+
+    /* Organisation du Footer*/
+
+    footer {
+        display: block;
+        width: 375px;
+        background: #F2F2F2;
+        margin: 0;
+        margin-top: 80px;
+    }
+
+
+    footer nav:nth-of-type(1) {
+        margin: 0;
+        margin-left: 33px;
+        margin-bottom: 40px;
+        padding-top: 45px;
+    }
+
+    footer nav:nth-of-type(2),
+    footer nav:nth-of-type(3) {
+        margin: 0;
+        margin-left: 33px;
+        margin-bottom: 40px;
+    }
+}
